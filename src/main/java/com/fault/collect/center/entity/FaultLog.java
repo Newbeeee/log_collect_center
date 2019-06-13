@@ -100,4 +100,24 @@ public class FaultLog {
     public void setNotEmpty(int notEmpty) {
         this.notEmpty = notEmpty;
     }
+
+//    String node;
+//    String service;
+//    String logPath;
+//    String storagePath;
+//    String missionId;
+//    String redisId;
+//    String content;
+//    String host;
+
+    @Override
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+        sb.append("id: " + id + " | ");
+        sb.append("node: " + node + " | ");
+        sb.append("service: " + service + " | ");
+        sb.append("host: " + host + " | ");
+        sb.append("content: " + content + " | ");
+        return super.toString();
+    }
 }
